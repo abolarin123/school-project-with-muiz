@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Login</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full-screen background */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://www.example.com/school-background.jpg'); /* Add a relevant background image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+            padding: 40px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #fafafa;
+        }
+
+        .input-group input[type="submit"] {
+            background-color: #3498db; /* Blue for school branding */
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .input-group input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+        .forgot-password {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #2c3e50;
+        }
+
+        .forgot-password a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        .school-logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        .create-account span{
+            color: #777;
+            
+        }
+        .create-account{
+            padding-top: 20px;
+        }
+        .create-account a{
+            color: navy;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <img  src="https://png.pngtree.com/png-clipart/20230409/original/pngtree-school-logo-design-png-image_9037661.png" alt="School Logo" class="school-logo"> 
+        <h2>Welcome to Muiz School</h2>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="input-group">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <div class="create-account">
+            <span>Don't have an account?</span>
+            <a href="/register">Create an account</a>
+        </div>
+    </div>
+
+</body>
+</html>
