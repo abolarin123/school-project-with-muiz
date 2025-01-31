@@ -98,13 +98,27 @@
             color: navy;
             text-decoration: none;
         }
+        .text-error{
+            color: red;
+        }
+
     </style>
 </head>
 <body>
 
+
     <div class="login-container">
         <img  src="https://png.pngtree.com/png-clipart/20230409/original/pngtree-school-logo-design-png-image_9037661.png" alt="School Logo" class="school-logo"> 
         <h2>Welcome to Muiz School</h2>
+            {% with messages = get_flashed_messages(with_categories=True) %}
+                {% if messages %}
+                <ul>
+                    {% for category, message in messages %}
+                        <li class="text-{{category}}">{{message}}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            {% endwith %}
         <form action="#" method="POST">
             <div class="input-group">
                 <input type="text" name="email" placeholder="Email" required>
