@@ -82,7 +82,9 @@
                         <a class="nav-link" href="#">Settings <i class="fas fa-cog"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Logout <i class="fas fa-sign-out-alt"></i></a>
+                        <a class="nav-link" href="/logout">Logout <i class="fas fa-sign-out-alt"></i></a>
+                        
+                        
                     </li>
                 </ul>
             </div>
@@ -95,7 +97,7 @@
             <nav class="col-md-3 col-lg-2 d-md-block sidebar p-3">
                 <div class="text-center my-3">
                     <img src="profile.jpg" alt="Profile Picture" class="rounded-circle" width="120" height="120">
-                    <h4 class="mt-2">Student Name</h4>
+                    <h4 class="mt-2">{{first_name}}</h4>
                 </div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
@@ -200,6 +202,8 @@
                         </ul>
                     </div>
                 </div>
+                    
+                </div>
             </main>
         </div>
     </div>
@@ -246,5 +250,6 @@
             }
         });
     </script>
+
 </body>
 </html>
