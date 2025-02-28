@@ -11,31 +11,50 @@
   <div class="row g-3">
     <!-- main course list card  -->
     <div class="col-md-12">
-      <div class="card card-body card-default">
-        <!-- tabs -->
-        <ul class="nav nav-underline">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" data-toggle="tab" href="#python">Python</a>
+      <div class="card card-body shadow-sm">
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-underline mb-3" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="python-tab" data-bs-toggle="tab" data-bs-target="#python" type="button" role="tab" aria-controls="python" aria-selected="true">
+              <i class="bi bi-code-slash"></i> Python
+            </button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#javascript">JavaScript</a>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="javascript-tab" data-bs-toggle="tab" data-bs-target="#javascript" type="button" role="tab" aria-controls="javascript" aria-selected="false">
+              <i class="bi bi-file-code"></i> JavaScript
+            </button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#html">HTML5</a>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="html-tab" data-bs-toggle="tab" data-bs-target="#html" type="button" role="tab" aria-controls="html" aria-selected="false">
+              <i class="bi bi-file-earmark-code"></i> HTML5
+            </button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#css">CSS3</a>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="css-tab" data-bs-toggle="tab" data-bs-target="#css" type="button" role="tab" aria-controls="css" aria-selected="false">
+              <i class="bi bi-palette"></i> CSS3
+            </button>
           </li>
         </ul>
-        <!-- tabs -->
-
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="python">Py</div>
-          <div class="tab-pane fade" id="javascript" >Js</div>
-          <div class="tab-pane fade" id="html">HTML</div>
-          <div class="tab-pane fade" id="css">CSS</div>
+        
+        <!-- Tabs Content -->
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="python" role="tabpanel" aria-labelledby="python-tab">
+            <h5>Python Programming</h5>
+            <p>Python is a versatile programming language used for web development, data science, and more.</p>
+          </div>
+          <div class="tab-pane fade" id="javascript" role="tabpanel" aria-labelledby="javascript-tab">
+            <h5>JavaScript Development</h5>
+            <p>JavaScript is the backbone of dynamic web pages and front-end interactivity.</p>
+          </div>
+          <div class="tab-pane fade" id="html" role="tabpanel" aria-labelledby="html-tab">
+            <h5>HTML5 Markup</h5>
+            <p>HTML5 is the standard for structuring and presenting content on the web.</p>
+          </div>
+          <div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="css-tab">
+            <h5>CSS3 Styling</h5>
+            <p>CSS3 adds style and visual effects to your web pages, making them look beautiful and modern.</p>
+          </div>
         </div>
-
       </div>
     </div>
     <!-- main course list card  -->
