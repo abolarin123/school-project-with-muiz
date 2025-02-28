@@ -1,24 +1,44 @@
 {% extends "pages/Layouts/base.html" %}
-{% block content %} 
-<main>
-    <div class="container">
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
+{% block content %}
+<!-- main content goes here -->
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+  <!-- Title -->
+  <div class="d-block pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">The world's largest selection of courses</h1>
+    <p>Choose from 130,000 online courses with new additions published every month.</p>
+  </div>
+  
+  <div class="row g-3">
+    <!-- main course list card  -->
+    <div class="col-md-12">
+      <div class="card card-body card-default">
+        <!-- tabs -->
+        <ul class="nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" data-toggle="tab" href="#python">Python</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#javascript">JavaScript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#html">HTML5</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#css">CSS3</a>
+          </li>
+        </ul>
+        <!-- tabs -->
+
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="python">Py</div>
+          <div class="tab-pane fade" id="javascript" >Js</div>
+          <div class="tab-pane fade" id="html">HTML</div>
+          <div class="tab-pane fade" id="css">CSS</div>
+        </div>
+
+      </div>
     </div>
-        
+    <!-- main course list card  -->
+  </div>
 </main>
-
 {% endblock %}
-
