@@ -11,20 +11,28 @@
   <div class="row g-3">
     <!-- main course list card  -->
     <div class="col-md-12">
-      <div class="card card-body card-default">
-        <!-- tabs -->
-        <ul class="nav nav-underline">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" data-toggle="tab" href="#python">Python</a>
+      <div class="card card-body shadow-sm">
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-underline mb-3" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="python-tab" data-bs-toggle="tab" data-bs-target="#python" type="button" role="tab" aria-controls="python" aria-selected="true">
+              <i class="bi bi-code-slash"></i> Python
+            </button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#javascript">JavaScript</a>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="javascript-tab" data-bs-toggle="tab" data-bs-target="#javascript" type="button" role="tab" aria-controls="javascript" aria-selected="false">
+              <i class="bi bi-file-code"></i> JavaScript
+            </button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#html">HTML5</a>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="html-tab" data-bs-toggle="tab" data-bs-target="#html" type="button" role="tab" aria-controls="html" aria-selected="false">
+              <i class="bi bi-file-earmark-code"></i> HTML5
+            </button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#css">CSS3</a>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="css-tab" data-bs-toggle="tab" data-bs-target="#css" type="button" role="tab" aria-controls="css" aria-selected="false">
+              <i class="bi bi-palette"></i> CSS3
+            </button>
           </li>
         </ul>
         <!-- tabs -->
@@ -83,7 +91,6 @@
             </div>
           </div></div>
         </div>
-
       </div>
     </div>
     <!-- main course list card  -->
